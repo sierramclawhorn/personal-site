@@ -1,3 +1,48 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack:'ltc-bodoni-175-it', sans-serif;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'lato', sans-serif;
+
+.nameHeader {
+	text-align: center;
+}
+
+.nameTitle {
+	font-family: $font-stack;
+	font-size: 10vw;
+	margin-bottom: 0%;
+}
+
+.tagline {
+	font-family: $font-stack2;
+	font-size: 3vw;
+	color: #ffd2da;
+	letter-spacing: 5px;
+	margin-top: -10%;
+}
+
+@-webkit-keyframes fade-in {
+	from{
+	    opacity:1;
+	    top:0px;
+	}
+	to{
+	    opacity:0;
+	    top:-5px;
+	}
+}
+
+.textAnimatedOne {
+	display:inline;
+	position:relative;
+    -webkit-animation:fade-in 1.8s infinite;
+    -webkit-animation-delay: 1s;
+}
+
+.textAnimatedTwo{
+	opacity:0;
+	display:inline;
+	position:relative;
+	margin-left:-56px;
+	-webkit-animation:fade-in 1.8s infinite;
+	-webkit-animation-delay: 2s;
+}
