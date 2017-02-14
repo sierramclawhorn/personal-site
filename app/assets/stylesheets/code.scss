@@ -1,3 +1,7 @@
+$font-stack:'ltc-bodoni-175-it', sans-serif;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'lato', sans-serif;
+
 #portfolio {
 	// border: 1px solid black;
 	text-align: center;
@@ -8,12 +12,15 @@
 	height: 20vw;
 	margin: .1%;
 	display: inline-block;
-	background-color: pink;
+	background-color: #ffd2da;
 }
 
 .codeProject {
-  padding-top: 20%;
-  color: white;
+	padding-top: 20%;
+  	font-family: $font-stack2;
+	font-size: 1.4em;
+	color: white;
+	text-shadow: .7px 1px #d8d8d8;
 }
 
 .codeProject a{
@@ -23,4 +30,15 @@
 
 .codeProject a:hover {
 	color: black;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.codeTitle {
+	font-family: $font-stack;
+	font-size: 200%;
 }
