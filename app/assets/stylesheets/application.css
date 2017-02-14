@@ -38,6 +38,13 @@
 
 
 
+
+.heading {
+	text-align: center;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
 .nav a{
 	text-decoration: none;
 	font-family: $font-stack2;

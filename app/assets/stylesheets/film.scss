@@ -1,3 +1,81 @@
-// Place all the styles related to the film controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack:'ltc-bodoni-175-it', sans-serif;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'lato', sans-serif;
+
+.filmWrapper {
+    display:-moz-box;
+   	    -moz-box-pack:center;
+        -moz-box-align:center;
+    display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+    display:box;
+        box-pack:center;
+        box-align:center;
+}
+
+.experience {
+  width: 90vw;
+}
+
+.experience .internship {
+	font-size: 70%;
+}
+
+.experience p, table, li {
+  font-family: $font-stack3;
+  font-size: 86%;
+}
+
+.experience li {
+  line-height: 140%;
+}
+
+.experience table {
+  font-family: 'Avenir Next';
+  font-weight: lighter;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 83%;
+  margin-bottom: 4%;
+}
+
+.experience table, th, td {
+    border: .5px solid gray;
+}
+
+.experience th {
+  height: 35px;
+  text-align: center;
+  font-family: $font-stack3;
+}
+
+.experience th, td {
+  padding: 2px;
+}
+
+.experience td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  font-size: 95%;
+}
+
+.edu {
+	font-family: $font-stack2;
+}
+
+.edusub {
+  margin-top: -1%;
+  font-size: 90%;
+  font-family: $font-stack;
+  letter-spacing: 0px;
+}
+
+.education {
+  	padding-bottom: 2%;
+  	padding-top: 1%;
+  	margin-left: 2%;
+  	letter-spacing: 1px;
+  	text-align: center;
+}
