@@ -14,35 +14,12 @@ $font-stack3:'lato', sans-serif;
 
 .tagline {
 	font-family: $font-stack2;
-	font-size: 3vw;
-	color: #ffd2da;
 	letter-spacing: 5px;
-	margin-top: -10%;
+	margin-top: 1%;
+	font-size: 2vw;
 }
 
-@-webkit-keyframes fade-in {
-	from{
-	    opacity:1;
-	    top:0px;
-	}
-	to{
-	    opacity:0;
-	    top:-5px;
-	}
-}
-
-.textAnimatedOne {
-	display:inline;
-	position:relative;
-    -webkit-animation:fade-in 1.8s infinite;
-    -webkit-animation-delay: 1s;
-}
-
-.textAnimatedTwo{
-	opacity:0;
-	display:inline;
-	position:relative;
-	margin-left:-56px;
-	-webkit-animation:fade-in 1.8s infinite;
-	-webkit-animation-delay: 2s;
+.taglineTxt {
+	color: #ffd2da;
+	font-size: 2.8vw;
 }
