@@ -8,15 +8,18 @@ $font-stack3:'lato', sans-serif;
 }
 
 .codeProjectDiv {
-	width: 48vw;
+	width: 45vw;
 	height: 20vw;
 	margin: .1%;
+	margin-bottom: .3%;
 	display: inline-block;
 	background-color: #ffd2da;
+	border: 3px white solid;
 }
 
 .codeProject {
-	padding-top: 20%;
+	position: relative;
+	margin-top: 18%;
   	font-family: $font-stack2;
 	font-size: 1.4em;
 	color: white;

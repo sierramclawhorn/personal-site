@@ -32,7 +32,7 @@ $font-stack3:'lato', sans-serif;
 }
 
 .experience table {
-  font-family: 'Avenir Next';
+  font-family: 'courier new';
   font-weight: lighter;
   border-collapse: collapse;
   width: 100%;
@@ -41,7 +41,7 @@ $font-stack3:'lato', sans-serif;
 }
 
 .experience table, th, td {
-    border: .5px solid gray;
+  border: .5px solid gray;
 }
 
 .experience th {
@@ -59,6 +59,7 @@ $font-stack3:'lato', sans-serif;
   padding-bottom: 4px;
   padding-left: 6px;
   font-size: 95%;
+  padding: 6.5px;
 }
 
 .edu {
@@ -66,7 +67,7 @@ $font-stack3:'lato', sans-serif;
 }
 
 .edusub {
-  margin-top: -1%;
+  margin-top: -.6em;
   font-size: 90%;
   font-family: $font-stack;
   letter-spacing: 0px;
