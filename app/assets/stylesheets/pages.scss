@@ -3,13 +3,14 @@ $font-stack2:'ltc-bodoni-175', sans-serif;
 $font-stack3:'lato', sans-serif;
 
 .nameHeader {
-	text-align: center;
-	margin-top: 35vh; 
+	text-align: center; 
+	margin-top: 32vh;
 }
 
 .nameTitle {
 	font-family: $font-stack;
 	font-size: 10vw;
+	margin-top: 0%;
 	margin-bottom: 0%;
 }
 
@@ -23,4 +24,26 @@ $font-stack3:'lato', sans-serif;
 .taglineTxt {
 	color: #ffd2da;
 	font-size: 2.8vw;
+}
+
+.mainIcon {
+	width: 15%;
+	max-width: 150px;
+	min-width: 50px;
+	margin-bottom: 15px;
+
+}
+
+.navLinks {
+	display: none;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.icon {
+	width: 12%;
+	min-width: 50px;
+	max-width: 100px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 }
