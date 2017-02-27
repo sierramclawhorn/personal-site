@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
 
     //nav links
     $('.nameHeader').on('click', function() {
