@@ -19,8 +19,16 @@
 		<% end %>
 
 
-		<%= image_tag('icon-contact.png', :class => 'icon contact') %>
+		<%= image_tag('icon-contact.png', :class => 'icon contact', :id => 'contactBtn') %>
 	</div>
 </div>
 		
-		
+<div id='contactInfo' class='contactModal'>
+ 	<div class='contactModalContent'>
+ 		<span class='close'>&times;</span>
+    	<%= mail_to 'sierramclawhorn@gmail.com' do %>
+    		<p class='email'>sierramclawhorn@gmail.com</p>
+    	<% end %>
+    	<p>san francisco, ca</p>
+  	</div>
+</div>
