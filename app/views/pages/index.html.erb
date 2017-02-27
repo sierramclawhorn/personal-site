@@ -10,8 +10,15 @@
 	</div>
 
 	<div class='navLinks'>
-		<%= image_tag('icon-film.png', :class => 'icon film') %>
-		<%= image_tag('icon-code2.png', :class => 'icon code') %>
+		<%= link_to film_index_path do %>
+			<%= image_tag('icon-film.png', :class => 'icon film') %>
+		<% end %>
+
+		<%= link_to code_index_path do %>
+			<%= image_tag('icon-code2.png', :class => 'icon code') %>
+		<% end %>
+
+
 		<%= image_tag('icon-contact.png', :class => 'icon contact') %>
 	</div>
 </div>
