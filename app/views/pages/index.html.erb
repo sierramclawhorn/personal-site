@@ -3,9 +3,9 @@
 		<div class='nameHeader'>
 			<%= image_tag('icon-harlot.png', :class => 'mainIcon') %>
 		
-			<p class='nameTitle'>Sierra 		McLawhorn</p>
+			<p class='nameTitle'>Sierra McLawhorn</p>
 		
-			<p class='tagline'>| <span class='		taglineTxt'>human typewriter</span>		 |</p>
+			<p class='tagline'>| <span class='taglineTxt'>human typewriter</span>		 |</p>
 		</div>
 	</div>
 
@@ -18,17 +18,21 @@
 			<%= image_tag('icon-code2.png', :class => 'icon code') %>
 		<% end %>
 
-
 		<%= image_tag('icon-contact.png', :class => 'icon contact', :id => 'contactBtn') %>
 	</div>
 </div>
 		
+
 <div id='contactInfo' class='contactModal'>
  	<div class='contactModalContent'>
  		<span class='close'>&times;</span>
-    	<%= mail_to 'sierramclawhorn@gmail.com' do %>
-    		<p class='email'>sierramclawhorn@gmail.com</p>
-    	<% end %>
+
+    	<p class='email'>
+    		<%= mail_to 'sierramclawhorn@gmail.com' do %>
+    			sierramclawhorn@gmail.com
+    		<% end %>
+    	</p>
+
     	<p>san francisco, ca</p>
   	</div>
 </div>

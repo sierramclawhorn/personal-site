@@ -85,8 +85,14 @@ $font-stack3:'lato', sans-serif;
 }
 .email {
 	font-size: 1.5em;
+	font-family: $font-stack2;
+	letter-spacing: .1em;
 }
-.email a:link {
+.email a {
 	text-decoration: none;
+	color: black;
+}
+.email a:hover {
+	color: #ffbfc9;
 }
 
