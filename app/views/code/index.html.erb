@@ -13,32 +13,70 @@
 <div id='portfolio'> 
 	<div class='codeProjectDiv'>
 		<div class='codeProject'>
-			[ <%= link_to 'klink', klink_path %> ]
+			[ <span id='klinkBtn' class='codeProjBtn'>klink</span> ]
 		</div>
 	</div>
 	<div class='codeProjectDiv'>
 		<div class='codeProject'>
-			[ <%= link_to 'kathy and sierra', kathyandsierra_path %> ]
-		</div>
-	</div>
-	<div class='codeProjectDiv'>
-		<div class='codeProject'>
-			[ <%= link_to 'kwan tree', kwantree_path %> ]
-		</div>
-	</div>
-	<div class='codeProjectDiv'>
-		<div class='codeProject'>
-			[ <%= link_to 'american paradise', americanparadise_path %> ]
-		</div>
-	</div>
-	<div class='codeProjectDiv'>
-		<div class='codeProject'>
-			[ <%= link_to '#AbortionAccessHackathon', clinicfinder_path %> ]
+			[ <span id='clinicfinderBtn' class='codeProjBtn'>#AbortionAccessHackathon</span> ]
 		</div>		
 	</div>
 	<div class='codeProjectDiv'>
 		<div class='codeProject'>
+			[ <span id='kathyandsierraBtn' class='codeProjBtn'>kathy and sierra</span> ]
+		</div>
+	</div>
+	<div class='codeProjectDiv'>
+		<div class='codeProject'>
+			[ <span id='kwantreeBtn' class='codeProjBtn'>kwan tree</span> ]
+		</div>
+	</div>
+	<div class='codeProjectDiv'>
+		<div class='codeProject'>
+			[ <span id='americanparadiseBtn' class='codeProjBtn'>american paradise</span> ]
+		</div>
+	</div>
+	<div class='codeProjectDiv'>
+		<div class='codeProject' >
 			[ coming soon... ]
 		</div>		
 	</div>
+</div>
+
+
+<!-- Modals -->
+
+<div id='klinkModal' class='codeProjectModal'>
+ 	<div class='codeProjectModalContent'>
+ 		<span class='projClose'>&times;</span>
+    	<%= render partial: 'klink', layout: false %>
+  	</div>
+</div>
+
+<div id='clinicfinderModal' class='codeProjectModal'>
+ 	<div class='codeProjectModalContent'>
+ 		<span class='projClose'>&times;</span>
+    	<%= render partial: 'clinicfinder', layout: false %>
+  	</div>
+</div>
+
+<div id='kathyandsierraModal' class='codeProjectModal'>
+ 	<div class='codeProjectModalContent'>
+ 		<span class='projClose'>&times;</span>
+    	<%= render partial: 'kathyandsierra', layout: false %>
+  	</div>
+</div>
+
+<div id='kwantreeModal' class='codeProjectModal'>
+ 	<div class='codeProjectModalContent'>
+ 		<span class='projClose'>&times;</span>
+    	<%= render partial: 'kwantree', layout: false %>
+  	</div>
+</div>
+
+<div id='americanparadiseModal' class='codeProjectModal'>
+ 	<div class='codeProjectModalContent'>
+ 		<span class='projClose'>&times;</span>
+    	<%= render partial: 'americanparadise', layout: false %>
+  	</div>
 </div>
