@@ -58,6 +58,16 @@ $font-stack3:'lato', sans-serif;
 	text-align: center;
 }
 
+.projectShow .nav {
+    font-size: 1.2em;
+    font-family: $font-stack;
+    padding-bottom: 1%;
+}
+
+.projectShow .nav a:hover{
+    color: pink;
+}
+
 .projectShow p {
     font-family: $font-stack2;
     font-size: 1em;
@@ -67,6 +77,14 @@ $font-stack3:'lato', sans-serif;
 	font-family: $font-stack2;
 	font-size: 1em;
     text-align: left;
+}
+
+.projImgs {
+    padding-top: 2%;
+}
+
+.projImgs img{
+    width: 75vw;
 }
 
 .vimeoVid {
