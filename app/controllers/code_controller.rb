@@ -12,6 +12,9 @@ class CodeController < ApplicationController
 	def kwantree
 	end
 
+	def clinicfinder
+	end
+
 	def americanparadise
 	end
 
