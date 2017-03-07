@@ -58,6 +58,11 @@ $font-stack3:'lato', sans-serif;
 	text-align: center;
 }
 
+.projectShow p {
+    font-family: $font-stack2;
+    font-size: 1em;
+}
+
 .projectShow li {
 	font-family: $font-stack2;
 	font-size: 1em;
