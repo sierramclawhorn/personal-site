@@ -1,0 +1,107 @@
+$font-stack:'ltc-bodoni-175-it', sans-serif;
+$font-stack2:'ltc-bodoni-175', sans-serif;
+$font-stack3:'lato', sans-serif;
+
+.nameHeader {
+	text-align: center; 
+	margin-top: 32vh;
+	cursor: pointer;
+}
+
+.nameTitle {
+	font-family: $font-stack;
+	font-size: 10vw;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+.tagline {
+	font-family: $font-stack2;
+	letter-spacing: 5px;
+	margin-top: 1%;
+	font-size: 2vw;
+}
+
+.taglineTxt {
+	color: #ffd2da;
+	font-size: 2.8vw;
+}
+
+.mainIcon {
+	width: 15%;
+	max-width: 150px;
+	min-width: 50px;
+	margin-bottom: 15px;
+}
+
+.mainIcon:hover {
+-webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+-webkit-box-shadow: 0px 0px 30px 0px white;
+  -moz-box-shadow: 0px 0px 30px 0px white;
+  box-shadow: 0px 0px 30px 0px white;
+}
+
+.navLinks {
+	display: none;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.icon {
+	width: 12%;
+	min-width: 50px;
+	max-width: 100px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+
+//modal
+.contactModal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    color: black;
+    text-align: center;
+}
+.contactModalContent {
+    background-color: #f9dbe0;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.email {
+	font-size: 1.5em;
+	font-family: $font-stack2;
+	letter-spacing: .1em;
+}
+.email a {
+	text-decoration: none;
+	color: black;
+}
+.email a:hover {
+	color: #ffbfc9;
+}
+
