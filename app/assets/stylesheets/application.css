@@ -37,7 +37,6 @@
 }
 
 
-
 body {
 	background-color: #191919;
 	color: white;
@@ -51,7 +50,7 @@ body {
 
 .nav a {
 	text-decoration: none;
-	font-family: $font-stack2;
+	font-family: 'ltc-bodoni-175', sans-serif;
 	color: #7c7c7c;
 	letter-spacing: 1.1px;
 }

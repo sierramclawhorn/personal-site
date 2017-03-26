@@ -58,13 +58,16 @@ $font-stack3:'lato', sans-serif;
 	text-align: center;
 }
 
-.projectShow .nav {
+.projectShow .projNav a {
+    text-decoration: none;
     font-size: 1.2em;
     font-family: $font-stack;
+    color: #7c7c7c;
+    letter-spacing: 1.1px;
     padding-bottom: 1%;
 }
 
-.projectShow .nav a:hover{
+.projectShow .projNav a:hover{
     color: pink;
 }
 
