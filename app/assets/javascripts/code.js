@@ -1,7 +1,7 @@
 $(document).on('turbolinks:load', function(){
 
     //modals
-    var modalBtns = [...document.querySelectorAll('.codeProjBtn')];
+    var modalBtns = document.querySelectorAll('.codeProjBtn');
     modalBtns.forEach(function(btn){
       btn.onclick = function() {
         var projModal = btn.getAttribute('data-modal');
@@ -9,7 +9,7 @@ $(document).on('turbolinks:load', function(){
       }
     });
     
-    var closeBtns = [...document.querySelectorAll(" .projClose")];
+    var closeBtns = document.querySelectorAll(" .projClose");
     closeBtns.forEach(function(btn){
       btn.onclick = function() {
         var projModal = btn.closest('.codeProjectModal');
