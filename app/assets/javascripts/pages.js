@@ -6,6 +6,19 @@ $(document).on('turbolinks:load', function(){
     });
 
 
+    //potato
+    var tater = document.getElementsByClassName('potato')[0];
+
+    $('.tagline').on('mouseover', function() {
+      tater.style.display = "initial";
+      console.log("hovered");
+    });
+    $('.tagline').on('mouseout', function() {
+      tater.style.display = "none";
+      console.log("hovered");
+    });
+
+
     //modal
     var modal = document.getElementById('contactInfo');
     var span = document.getElementsByClassName("close")[0];
