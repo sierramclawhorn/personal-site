@@ -136,7 +136,7 @@ $font-stack3:'lato', sans-serif;
 
 @media only screen and (max-device-width: 801px) {
     /* For mobile phones: */
-    .projectShow .projNav a {
+    .codeTitle, .projectShow .projNav a {
       font-family: $font-stack2;
       font-style: italic;
     }
