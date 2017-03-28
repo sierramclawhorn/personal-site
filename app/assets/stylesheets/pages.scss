@@ -148,3 +148,13 @@ $font-stack3:'lato', sans-serif;
 @keyframes moveY {
   from { top: 0; } to { top: 100%; }
 }
+
+
+
+@media only screen and (max-device-width: 801px) {
+    /* For mobile phones: */
+    .nameTitle {
+      font-family: $font-stack2;
+      font-style: italic;
+    }
+}
