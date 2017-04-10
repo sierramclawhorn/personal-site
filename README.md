@@ -1,1 +1,1 @@
-# Personal Website: Under Construction
+# personal blog site built with Ruby on Rails
