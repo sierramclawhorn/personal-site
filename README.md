@@ -1,1 +1,1 @@
-# personal blog site built with Ruby on Rails
+# personal site built with Ruby on Rails
