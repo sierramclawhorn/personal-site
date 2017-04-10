@@ -1,1 +1,1 @@
-# personal blog site built with Ruby on Rails
+# www.sierramclawhorn.com
