@@ -134,11 +134,19 @@ body {
 
 
 
-// _____________________________________________________ contact
-.contactSection {
+// _____________________________________________________ connect
+.connectSection {
   padding-bottom: 1%;
   background-color: #ff8989;
   text-align: center;
+}
+
+#contactBtn:hover {
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));  
 }
 
 .nav a {

@@ -1,24 +1,5 @@
-<div class='contactSection'>
-	<%= image_tag('icon-contact.png', :class => 'icon contact', :id => 'contactBtn') %>
-	<div class='nav'>
-		<%= link_to 'github', 'http://www.github.com/sierramclawhorn', target: '_blank', rel: 'nofollow' %>
-		<span class='navSpacer'> • </span>
-		<%= link_to 'linkedin', 'http://www.linkedin.com/in/sierramclawhorn', target: '_blank', rel: 'nofollow' %>
-	</div>
-</div>
-
-<div id='contactInfo' class='contactModal'>
- 	<div class='contactModalContent'>
- 		<span class='close'>&times;</span>
-
-    	<p class='email'>
-    		<%= mail_to 'sierramclawhorn@gmail.com' do %>
-    			sierramclawhorn@gmail.com
-    		<% end %>
-    	</p>
-
-    	<p>san francisco, ca</p>
-  	</div>
+<div class='connectSection'>
+	<%= render 'connect' %>
 </div>
 
 
