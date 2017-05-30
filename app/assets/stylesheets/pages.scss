@@ -5,7 +5,7 @@ $font-stack3:'lato', sans-serif;
 .nameHeader {
 	text-align: center; 
 	margin-top: 28vh;
-	cursor: pointe
+	cursor: pointer;
 }
 
 .nameTitle {
@@ -163,37 +163,36 @@ $font-stack3:'lato', sans-serif;
 
 
 // _____________________________________________________ hello
-
-
 body {
   margin: -1px;
 }
 
-.filmSection {
-  
-}
-
-.filmBG {
-  background-image: url('/images/filmSection.jpg');
+.filmBG, .codeBG {
+  opacity: 0.8;
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;
-  background-opacity: .5;
-  min-height: 30rem;
+  background-opacity: .6;
+  min-height: 20rem;
   width: 100vw;
   overflow: hidden;
   text-align: center;
 }
+    .filmBG {
+      background-image: url('/images/filmSection.jpg');
+    }
+    .codeBG {
+      background-image: url('/images/codeSection.jpg');
+    }
 
-.filmTitleDiv {
+.filmTitleDiv, .codeTitleDiv {
   width: 45vw;
-  // min-width: 540px;
   height: 20vw;
   margin-top: 10%;
   display: inline-block;
 }
 
-.filmTitle {
+.filmSectionTitle, .codeSectionTitle {
   position: relative;
   display: inline-block;
   margin-top: 6%;
@@ -203,38 +202,282 @@ body {
   text-shadow: .7px 1px #d8d8d8;
 }
 
-.filmBtn {
+.filmBtn, .codeBtn {
   color: white;
   opacity: 0.4;
   text-decoration: none;
 }
+    .filmBtn {
+      text-shadow: 2px 3px #e04700;
+    }
+    .codeBtn {
+      text-shadow: 2px 3px #1088ea;
+    }
 
-.filmBtn:hover {
+.filmBtn:hover, .codeBtn:hover {
   opacity: 1;
-  color: #e04700;
   cursor: pointer;
+  text-shadow: .7px 1px #d8d8d8;
 }
+    .filmBtn:hover {
+        color: #e04700;
+    }
+    .codeBtn:hover {
+        color: #1088ea;
+    }
 
-@media all and (max-width: 800px) {
-    .filmTitle {
+@media all and (max-width: 900px) {
+    .filmSectionTitle, .codeSectionTitle {
       margin-top: 25%;
     }
 }
 
+@media all and (max-width: 700px) {
+    .filmBG, .codeBG {
+      opacity: 1;
+    }
+    .filmBtn, .codeBtn {
+      opacity: 0.5;
+    }
+    .filmBtn:hover, .codeBtn:hover {
+      text-shadow: .7px 1px #d8d8d8;
+    }
+    .filmSectionTitle, .codeSectionTitle {
+      margin-left: -10%;
+      font-size: 30vw;
+    }
+}
+
 @media all and (max-width: 540px) {
-    .filmTitle {
-      margin-top: 75%;
+    .filmSectionTitle, .codeSectionTitle {
       margin-left: -25%;
       font-size: 40vw;
     }
 }
 
+// _____________________________________________________ film
 .filmResume {
-  display: none;
-  background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
-  background: rgba(0, 0, 0, .85);
   margin: auto;
-  padding-top: 4%;
-  width: inherit;
-  height: inherit;
+  width: 100%;
+}
+
+.filmWrapper {
+  padding-top: 2%;
+  background-color: orange;
+  display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+  display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+  display:box;
+      box-pack:center;
+      box-align:center;
+}
+    .experience {
+      width: 90vw;
+    }
+    .experience .internship {
+      font-size: 70%;
+    }
+    .experience p, table, li {
+      font-family: $font-stack3;
+      font-size: 86%;
+    }
+    .experience li {
+      line-height: 140%;
+    }
+    .experience table {
+      font-family: 'courier new';
+      font-weight: lighter;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 83%;
+      margin-bottom: 2%;
+    }
+    .experience table, th, td {
+      border: .5px solid gray;
+    }
+    .experience th {
+      height: 35px;
+      text-align: center;
+      font-family: $font-stack3;
+    }
+    .experience th, td {
+      padding: 2px;
+    }
+    .experience td {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 6px;
+      font-size: 95%;
+      padding: 6.5px;
+    }
+    .edu {
+      font-family: $font-stack2;
+    }
+    .edusub {
+      margin-top: -.6em;
+      font-size: 90%;
+      font-family: $font-stack;
+      letter-spacing: 0px;
+    }
+    .education {
+        padding-bottom: 2%;
+        padding-top: 1%;
+        margin-left: 2%;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+@media only screen and (max-device-width: 801px) {
+    /* For mobile phones: */
+    .edusub, {
+      font-family: $font-stack2;
+      font-style: italic;
+    }
+}
+
+
+// _____________________________________________________ code
+.codeResume {
+  margin: auto;
+  padding-top: 1%;
+  width: 100%;
+}
+
+#codePortfolio {
+  text-align: center;
+}
+
+.codeProjectDiv {
+  width: 45vw;
+  height: 20vw;
+  margin: .1%;
+  margin-bottom: .3%;
+  display: inline-block;
+  background-color: #7ebdea;
+  // opacity: 0.9;
+  border: 2px white solid;
+}
+
+.codeProject {
+  position: relative;
+  margin-top: 20%;
+  font-family: $font-stack2;
+  font-size: 2.5vw;
+  color: white;
+}
+
+.codeProject a, .codeProject .codeProjBtn{
+  color: white;
+  text-decoration: none;
+}
+
+.codeProject a:hover, .codeProject .codeProjBtn:hover {
+  color: black;
+  text-shadow: .7px 1px #d8d8d8;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.codeTitle {
+  font-family: $font-stack;
+  font-size: 350%;
+}
+
+@media all and (max-width: 700px) {
+    .codeProject {
+      font-size: 4vw;
+      margin-top: 18%;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .codeProjectDiv { 
+      width: 90vw;
+      height: 40vw;
+    }
+    .codeProject {
+      font-size: 6vw;
+    }
+}
+
+    // _______________________________________ individual project pages
+    .centered {
+      text-align: center;
+    }
+    .projectShow .projNav a {
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: $font-stack;
+        color: #7c7c7c;
+        letter-spacing: 1.1px;
+        padding-bottom: 1%;
+    }
+    .projectShow .projNav a:hover{
+        color: pink;
+    }
+    .projectShow p {
+        font-family: $font-stack2;
+        font-size: 1em;
+    }
+    .projectShow li {
+      font-family: $font-stack2;
+      font-size: 1em;
+        text-align: left;
+    }
+    .projImgs {
+        padding-top: 2%;
+    }
+    .projImgs img{
+        width: 75vw;
+    }
+    .vimeoVid {
+        padding-top: 1%;
+        width: 60vw;
+        height: 30vw;
+    }
+    
+    // _______________________________________ modals
+    .codeProjectModal {
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+        color: black;
+        text-align: center;
+    }
+    .codeProjectModalContent {
+        background-color: #f9dbe0;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .projClose {
+        color: #aaa;
+        float: right;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .projClose:hover,
+    .projClose:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+@media only screen and (max-device-width: 801px) {
+    /* For mobile phones: */
+    .codeTitle, .projectShow .projNav a {
+      font-family: $font-stack2;
+      font-style: italic;
+    }
 }
