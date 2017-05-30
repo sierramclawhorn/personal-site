@@ -134,12 +134,7 @@ body {
 
 
 
-// _____________________________________________________ about
-
-
-
-
-// _____________________________________________________ connect
+// _____________________________________________________ connect & nav
 .connectSection {
   padding-bottom: 1%;
   background-color: #ff8989;
@@ -219,37 +214,49 @@ body {
     }
 
 
+// _____________________________________________________ about
+.aboutSection {
+  background-color: #a0e8c5;
+  text-align: center;
+}
+
+
 // _____________________________________________________ hello
 body {
   margin: -1px;
 }
 
-.filmBG, .codeBG {
-  opacity: 0.8;
+.aboutBG, .filmBG, .codeBG {
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;
   background-opacity: .6;
   min-height: 20rem;
-  width: 100vw;
+  width: 101vw;
   overflow: hidden;
   text-align: center;
 }
+    .aboutBG {
+      background-image: url('/images/aboutSection.jpg');
+      opacity: 0.94; 
+    }
     .filmBG {
       background-image: url('/images/filmSection.jpg');
+      opacity: 0.8;
     }
     .codeBG {
       background-image: url('/images/codeSection.jpg');
+      opacity: 0.8;
     }
 
-.filmTitleDiv, .codeTitleDiv {
+.aboutTitleDiv, .filmTitleDiv, .codeTitleDiv {
   width: 45vw;
   height: 20vw;
   margin-top: 10%;
   display: inline-block;
 }
 
-.filmSectionTitle, .codeSectionTitle {
+.aboutSectionTitle, .filmSectionTitle, .codeSectionTitle {
   position: relative;
   display: inline-block;
   margin-top: 6%;
@@ -259,11 +266,14 @@ body {
   text-shadow: .7px 1px #d8d8d8;
 }
 
-.filmBtn, .codeBtn {
+.aboutBtn, .filmBtn, .codeBtn {
   color: white;
   opacity: 0.4;
   text-decoration: none;
 }
+    .aboutBtn {
+      text-shadow: 2px 3px #a0e8c5;
+    }
     .filmBtn {
       text-shadow: 2px 3px #e04700;
     }
@@ -271,41 +281,52 @@ body {
       text-shadow: 2px 3px #1088ea;
     }
 
-.filmBtn:hover, .codeBtn:hover {
+.aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
   opacity: 1;
   cursor: pointer;
   text-shadow: .7px 1px #d8d8d8;
 }
+    .aboutBtn:hover {
+      color: #a0e8c5;
+    }
     .filmBtn:hover {
-        color: #e04700;
+      color: #e04700;
     }
     .codeBtn:hover {
-        color: #1088ea;
+      color: #1088ea;
     }
 
 @media all and (max-width: 900px) {
-    .filmSectionTitle, .codeSectionTitle {
+    .aboutSectionTitle, .filmSectionTitle, .codeSectionTitle {
       margin-top: 25%;
     }
 }
 
 @media all and (max-width: 700px) {
-    .filmBG, .codeBG {
+    .aboutBG, .filmBG, .codeBG {
       opacity: 1;
     }
-    .filmBtn, .codeBtn {
+    .aboutBtn, .filmBtn, .codeBtn {
       opacity: 0.5;
     }
-    .filmBtn:hover, .codeBtn:hover {
+    .aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
       text-shadow: .7px 1px #d8d8d8;
     }
     .filmSectionTitle, .codeSectionTitle {
       margin-left: -10%;
       font-size: 30vw;
     }
+    .aboutTitleDiv {
+      margin-left: -20%;
+      font-size: 30vw;
+    }
 }
 
 @media all and (max-width: 540px) {
+    .aboutTitleDiv {
+      margin-left: -33%;
+      font-size: 40vw;
+    }
     .filmSectionTitle {
       margin-left: -25%;
       font-size: 40vw;
