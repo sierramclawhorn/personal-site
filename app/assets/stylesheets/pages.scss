@@ -134,6 +134,11 @@ body {
 
 
 
+// _____________________________________________________ about
+
+
+
+
 // _____________________________________________________ connect
 .connectSection {
   padding-bottom: 1%;
@@ -301,8 +306,12 @@ body {
 }
 
 @media all and (max-width: 540px) {
-    .filmSectionTitle, .codeSectionTitle {
+    .filmSectionTitle {
       margin-left: -25%;
+      font-size: 40vw;
+    }
+    .codeSectionTitle {
+      margin-left: -35%;
       font-size: 40vw;
     }
 }
