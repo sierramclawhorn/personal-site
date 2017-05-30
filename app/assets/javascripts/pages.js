@@ -22,6 +22,11 @@ $(document).on('turbolinks:load', function(){
         }
     };
 
+
+    //film
+    $('.')
+
+
 });
 
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
