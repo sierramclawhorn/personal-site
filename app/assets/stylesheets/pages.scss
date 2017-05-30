@@ -2,6 +2,33 @@ $font-stack:'ltc-bodoni-175-it', sans-serif;
 $font-stack2:'ltc-bodoni-175', sans-serif;
 $font-stack3:'lato', sans-serif;
 
+body {
+  background-color: #191919;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.homeIcon {
+  width: 5%;
+  min-width: 60px;
+  margin-top: 1%;
+}
+
+.homeIcon:hover {
+-webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+-webkit-box-shadow: 0px 0px 30px 0px white;
+  -moz-box-shadow: 0px 0px 30px 0px white;
+  box-shadow: 0px 0px 30px 0px white;
+}
+
+
 .nameHeader {
 	text-align: center; 
 	margin-top: 28vh;
@@ -43,12 +70,6 @@ $font-stack3:'lato', sans-serif;
   box-shadow: 0px 0px 30px 0px white;
 }
 
-.navLinks {
-	display: none;
-	text-align: center;
-	margin-top: 2em;
-}
-
 .icon {
 	width: 12%;
 	min-width: 50px;
@@ -57,61 +78,13 @@ $font-stack3:'lato', sans-serif;
 	padding-right: 1.5em;
 }
 
-
-//modal
-.contactModal {
-    display: none;
-    position: fixed; 
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    color: black;
-    text-align: center;
-}
-.contactModalContent {
-    background-color: #f9dbe0;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 25px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.email {
-	font-size: 1.5em;
-	font-family: $font-stack2;
-	letter-spacing: .1em;
-}
-.email a {
-	text-decoration: none;
-	color: black;
-}
-.email a:hover {
-	color: #ffbfc9;
-}
-
 .potato {
   width: 300%;
   display: none;
 }
 
 .aniPotato {
-	z-index: -1;
+  z-index: -1;
     position: absolute;
     top: 10%;
     left: 0;
@@ -160,6 +133,77 @@ $font-stack3:'lato', sans-serif;
 }
 
 
+
+// _____________________________________________________ contact
+.contactSection {
+  padding-bottom: 1%;
+  background-color: #ff8989;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: 'ltc-bodoni-175', sans-serif;
+  color: #7c7c7c;
+  letter-spacing: 1.2px;
+  font-size: 135%;
+}
+
+.nav a:hover {
+  color: #ffd2da;
+}
+
+.navSpacer {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+    //modal
+    .contactModal {
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+        color: black;
+        text-align: center;
+    }
+    .contactModalContent {
+        background-color: #f9dbe0;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .email {
+    	font-size: 1.5em;
+    	font-family: $font-stack2;
+    	letter-spacing: .1em;
+    }
+    .email a {
+    	text-decoration: none;
+    	color: black;
+    }
+    .email a:hover {
+    	color: #ffbfc9;
+    }
 
 
 // _____________________________________________________ hello

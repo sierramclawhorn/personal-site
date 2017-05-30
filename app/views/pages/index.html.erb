@@ -2,41 +2,13 @@
   <%= image_tag('potato.png', class: 'potato') %>
 </div>
 
-<div class='toggleParent'>
-	<div class='toggleHolder'>
-		<div class='nameHeader'>
-			<%= image_tag('icon-harlot.png', :class => 'mainIcon') %>
-		
-			<p class='nameTitle'>Sierra McLawhorn</p>
-		
-			<p class='tagline'>| <span class='taglineTxt'>human typewriter</span> |</p>
-		</div>
-	</div>
 
-	<div class='navLinks'>
-		<%= link_to film_index_path do %>
-			<%= image_tag('icon-film.png', :class => 'icon film') %>
-		<% end %>
-
-		<%= link_to code_index_path do %>
-			<%= image_tag('icon-code2.png', :class => 'icon code') %>
-		<% end %>
-
-		<%= image_tag('icon-contact.png', :class => 'icon contact', :id => 'contactBtn') %>
-	</div>
-</div>
-		
-
-<div id='contactInfo' class='contactModal'>
- 	<div class='contactModalContent'>
- 		<span class='close'>&times;</span>
-
-    	<p class='email'>
-    		<%= mail_to 'sierramclawhorn@gmail.com' do %>
-    			sierramclawhorn@gmail.com
-    		<% end %>
-    	</p>
-
-    	<p>san francisco, ca</p>
-  	</div>
+<div class='nameHeader'>
+	<%= link_to hello_path do %>
+		<%= image_tag('icon-harlot.png', :class => 'mainIcon') %>
+	<% end %>
+	
+	<p class='nameTitle'>Sierra McLawhorn</p>
+	
+	<p class='tagline'>| <span class='taglineTxt'>human typewriter</span> |</p>
 </div>

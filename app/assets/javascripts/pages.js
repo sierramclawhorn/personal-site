@@ -1,12 +1,6 @@
 $(document).on('turbolinks:load', function(){
 
-    //nav links
-    $('.nameHeader').on('click', function() {
-        $(this).parent().parent().find('.navLinks').slideToggle();
-    });
-
-
-    //modal
+    //contact modal
     var modal = document.getElementById('contactInfo');
     var span = document.getElementsByClassName("close")[0];
     
@@ -22,6 +16,28 @@ $(document).on('turbolinks:load', function(){
         }
     };
 
+    // code project modals
+    var modalBtns = document.querySelectorAll('.codeProjBtn');
+    modalBtns.forEach(function(btn){
+      btn.onclick = function() {
+        var projModal = btn.getAttribute('data-modal');
+        document.getElementById(projModal).style.display =  "block";
+      }
+    });
+    
+    var closeBtns = document.querySelectorAll(".projClose");
+    closeBtns.forEach(function(btn){
+      btn.onclick = function() {
+        var projModal = btn.closest('.codeProjectModal');
+        projModal.style.display = "none";
+      }
+    });
+    
+    window.onclick = function(event) {
+      if (event.target.className === 'codeProjectModal') {
+        event.target.style.display = "none";
+      }
+    };
 
 });
 
