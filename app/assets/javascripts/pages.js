@@ -1,5 +1,19 @@
 $(document).on('turbolinks:load', function(){
 
+    //scrolling icon header
+    $(window).scroll(function(){                          
+      if ($(this).scrollTop() > 200) {
+        $('.scrollingIcon').fadeIn(500);
+      } else {
+        $('.scrollingIcon').fadeOut(500);
+      }
+    });
+
+    $('.scrollingIcon').click(function() {
+      $("body").scrollTop(0);
+    });
+
+
     //contact modal
     var modal = document.getElementById('contactInfo');
     var span = document.getElementsByClassName("close")[0];
