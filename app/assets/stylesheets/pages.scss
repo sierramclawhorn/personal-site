@@ -208,6 +208,7 @@ body {
 }
 
 #contactBtn:hover {
+  cursor: pointer;
   -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
   -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
   -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
