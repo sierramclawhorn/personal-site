@@ -126,6 +126,20 @@ body {
 
 @media handheld, screen and (max-width: 600px) {
     /* For mobile phones: */
+    .aboutBtn, .filmBtn, .codeBtn {
+      text-shadow: .7px 1px #d8d8d8;
+      opacity: 1;
+    }
+        .aboutBtn {
+          color: #5bb789;
+        }
+        .filmBtn {
+          color: #e04700;
+        }
+        .codeBtn {
+          color: #1088ea;
+        }
+
     .nameTitle, .abouttxt3 {
       font-family: $font-stack2;
       font-style: italic;
@@ -180,20 +194,6 @@ body {
     td:nth-of-type(3):after { content: " - Type"; }
     td:nth-of-type(4):after { content: " - Producer"; }
     td:nth-of-type(5):after { content: " - Director"; }
-  
-    .aboutBtn, .filmBtn, .codeBtn {
-      text-shadow: .7px 1px #d8d8d8;
-       opacity: 1;
-    }
-        .aboutBtn {
-          color: #5bb789;
-        }
-        .filmBtn {
-          color: #e04700;
-        }
-        .codeBtn {
-          color: #1088ea;
-        }
 }
 
 
