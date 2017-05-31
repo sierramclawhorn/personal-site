@@ -229,10 +229,6 @@ body {
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;
-  border-radius: 5px;
-  padding: 10px;
-  color: #fff;
-  font-size: 12px Arial;
 }
     .masterTooltip {
       text-decoration: none;
@@ -250,6 +246,10 @@ body {
     }
     .abouttxt2 {
       font-size: 1.8rem;
+    }
+    .abouttxt3 {
+      font-size: 1.3rem;
+      font-family: $font-stack;
     }
 
 
