@@ -299,10 +299,23 @@ body {
       font-size: 1.8rem;
     }
     .abouttxt3 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-family: $font-stack;
     }
-
+    .emphasisetxt {
+      color: yellow;
+    }
+    .emphasisetxt2 {
+      font-family: $font-stack2;
+    }
+    .emphasisetxt3 {
+      letter-spacing: .15rem;
+    }
+    .emphasisetxt4 {
+      text-transform: uppercase;
+      letter-spacing: .06rem;
+      font-size: 1.2rem;
+    }
 
 
 // _____________________________________________________ hello
