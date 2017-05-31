@@ -221,7 +221,7 @@ body {
   font-family: 'ltc-bodoni-175', sans-serif;
   color: #7c7c7c;
   letter-spacing: 1.2px;
-  font-size: 135%;
+  font-size: 130%;
 }
 
 .nav a:hover {
@@ -280,6 +280,20 @@ body {
     	color: #ffbfc9;
     }
 
+
+@media handheld, screen and (min-width: 800px) {
+  .nav a {
+    font-size: 180%;
+    letter-spacing: .2rem;
+  }
+  .navSpacer {
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+  }
+  #contactBtn {
+    padding-top: 1%;
+  }
+}
 
 // _____________________________________________________ about
 .aboutSection {
