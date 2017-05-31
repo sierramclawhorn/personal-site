@@ -181,6 +181,19 @@ body {
     td:nth-of-type(4):after { content: " - Producer"; }
     td:nth-of-type(5):after { content: " - Director"; }
   
+    .aboutBtn, .filmBtn, .codeBtn {
+      text-shadow: .7px 1px #d8d8d8;
+       opacity: 1;
+    }
+        .aboutBtn {
+          color: #5bb789;
+        }
+        .filmBtn {
+          color: #e04700;
+        }
+        .codeBtn {
+          color: #1088ea;
+        }
 }
 
 
@@ -433,18 +446,11 @@ body {
       opacity: 1;
     }
     .aboutBtn, .filmBtn, .codeBtn {
-      text-shadow: .7px 1px #d8d8d8;
-       opacity: 1;
+      opacity: 0.5;
     }
-        .aboutBtn {
-          color: #5bb789;
-        }
-        .filmBtn {
-          color: #e04700;
-        }
-        .codeBtn {
-          color: #1088ea;
-        }
+    .aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
+      text-shadow: .7px 1px #d8d8d8;
+    }
     .filmSectionTitle, .codeSectionTitle {
       margin-left: -10%;
       font-size: 30vw;
