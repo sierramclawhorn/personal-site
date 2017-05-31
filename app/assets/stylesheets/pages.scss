@@ -126,20 +126,6 @@ body {
 
 @media handheld, screen and (max-width: 600px) {
     /* For mobile phones: */
-    .aboutBtn, .filmBtn, .codeBtn {
-      text-shadow: .7px 1px #d8d8d8;
-      opacity: 1;
-    }
-        .aboutBtn {
-          color: #5bb789;
-        }
-        .filmBtn {
-          color: #e04700;
-        }
-        .codeBtn {
-          color: #1088ea;
-        }
-
     .nameTitle, .abouttxt3 {
       font-family: $font-stack2;
       font-style: italic;
@@ -474,6 +460,19 @@ body {
       margin-left: -35%;
       font-size: 40vw;
     }
+    .aboutBtn, .filmBtn, .codeBtn {
+      text-shadow: .7px 1px #d8d8d8;
+      opacity: 1;
+    }
+        .aboutBtn {
+          color: #5bb789;
+        }
+        .filmBtn {
+          color: #e04700;
+        }
+        .codeBtn {
+          color: #1088ea;
+        }
 }
 
 // _____________________________________________________ film
