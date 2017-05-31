@@ -433,19 +433,16 @@ body {
       opacity: 1;
     }
     .aboutBtn, .filmBtn, .codeBtn {
-      opacity: 0.5;
-    }
-    .aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
       text-shadow: .7px 1px #d8d8d8;
        opacity: 1;
     }
-        .aboutBtn:hover {
+        .aboutBtn {
           color: #5bb789;
         }
-        .filmBtn:hover {
+        .filmBtn {
           color: #e04700;
         }
-        .codeBtn:hover {
+        .codeBtn {
           color: #1088ea;
         }
     .filmSectionTitle, .codeSectionTitle {
