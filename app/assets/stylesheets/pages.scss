@@ -503,7 +503,7 @@ body {
       font-style: italic;
     }
     .experience {
-      width: 60%;
+      width: 80%;
     }
 }
 
@@ -526,7 +526,6 @@ body {
   margin-bottom: .3%;
   display: inline-block;
   background-color: #7ebdea;
-  // opacity: 0.9;
   border: 2px white solid;
 }
 
@@ -564,8 +563,8 @@ body {
 
 @media all and (max-width: 540px) {
     .codeProjectDiv { 
-      width: 90vw;
-      height: 40vw;
+      width: 80vw;
+      height: 36vw;
     }
     .codeProject {
       font-size: 6vw;
@@ -645,7 +644,7 @@ body {
 
 @media only screen and (max-device-width: 801px) {
     /* For mobile phones: */
-    .codeTitle, .projectShow .projNav a {
+    .codeTitle, .projectShow .projNav a, .abouttxt3 {
       font-family: $font-stack2;
       font-style: italic;
     }
