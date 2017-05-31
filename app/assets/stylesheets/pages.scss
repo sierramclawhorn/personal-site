@@ -7,180 +7,120 @@ body {
   color: white;
 }
 
-.heading {
-  text-align: center;
-  margin-bottom: 2%;
-  margin-top: 2%;
-}
-
-.homeIcon {
-  width: 5%;
-  min-width: 60px;
-  margin-top: 1%;
-}
-
-.homeIcon:hover {
--webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
--webkit-box-shadow: 0px 0px 30px 0px white;
-  -moz-box-shadow: 0px 0px 30px 0px white;
-  box-shadow: 0px 0px 30px 0px white;
-}
-
-
-.nameHeader {
-	text-align: center; 
-	margin-top: 28vh;
-	cursor: pointer;
-}
-
-.nameTitle {
-	font-family: $font-stack;
-	font-size: 8vw;
-	margin-top: 0%;
-	margin-bottom: 0%;
-}
-
-.tagline {
-	font-family: $font-stack2;
-	letter-spacing: 5px;
-	margin-top: 1%;
-	font-size: 2vw;
-}
-
-.taglineTxt {
-	color: #ffd2da;
-	font-size: 2.6vw;
-}
-
-.mainIcon {
-	width: 15%;
-	max-width: 150px;
-	min-width: 50px;
-	margin-bottom: 15px;
-}
-
-.mainIcon:hover {
--webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
--webkit-box-shadow: 0px 0px 30px 0px white;
-  -moz-box-shadow: 0px 0px 30px 0px white;
-  box-shadow: 0px 0px 30px 0px white;
-}
-
-.icon {
-	width: 12%;
-	min-width: 50px;
-	max-width: 100px;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-}
-
-.potato {
-  width: 300%;
-  display: none;
-}
-
-.aniPotato {
-  z-index: -1;
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 40px;
-    height: 40px;
-
-    -webkit-animation: moveX 6s linear 0s infinite alternate;
-    -moz-animation: moveX 6s linear 0s infinite alternate;
-    -o-animation: moveX 6s linear 0s infinite alternate;
-    animation: moveX 6s linear 0s infinite alternate,
-               moveY 3.4s linear 0s infinite alternate;
-}
-@-webkit-keyframes moveX {
-  from { left: 0; } to { left: 102%; }
-}
-@-moz-keyframes moveX {
-  from { left: 0; } to { left: 102%; }
-}
-@-o-keyframes moveX {
-  from { left: 0; } to { left: 102%; }
-}
-@keyframes moveX {
-  from { left: 0; } to { left: 102%; }
-}
-@-webkit-keyframes moveY {
-  from { top: 0; } to { top: 100%; }
-}
-@-moz-keyframes moveY {
-  from { top: 0; } to { top: 100%; }
-}
-@-o-keyframes moveY {
-  from { top: 0; } to { top: 100%; }
-}
-@keyframes moveY {
-  from { top: 0; } to { top: 100%; }
-}
-
-
-
-@media handheld, screen and (max-width: 600px) {
-    /* For mobile phones: */
-    .nameTitle, .abouttxt3 {
-      font-family: $font-stack2;
-      font-style: italic;
+// _____________________________________________________ index page
+    .heading {
+      text-align: center;
+      margin-bottom: 2%;
+      margin-top: 2%;
     }
-
-    .aboutTxtWrapper {
-      max-width: 80%;
-      margin: auto;
+    
+    .homeIcon {
+      width: 5%;
+      min-width: 60px;
+      margin-top: 1%;
     }
-
-    .filmWrapper {
-      overflow: hidden;
+    
+    .homeIcon:hover {
+    -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 30px 0px white;
+      -moz-box-shadow: 0px 0px 30px 0px white;
+      box-shadow: 0px 0px 30px 0px white;
     }
-
-    /* Force table to not be like tables anymore */
-    table { 
-      width: 100%; 
-      border-collapse: collapse; 
-      border: none;
+    
+    .nameHeader {
+    	text-align: center; 
+    	margin-top: 28vh;
+    	cursor: pointer;
     }
-    /* Zebra striping */
-    tr:nth-of-type(odd) { 
-      background: #ea7f4d; 
+    
+    .nameTitle {
+    	font-family: $font-stack;
+    	font-size: 8vw;
+    	margin-top: 0%;
+    	margin-bottom: 0%;
     }
-    table, thead, tbody, th, td, tr { 
-      display: block; 
+    
+    .tagline {
+    	font-family: $font-stack2;
+    	letter-spacing: 5px;
+    	margin-top: 1%;
+    	font-size: 2vw;
     }
-    /* Hide table headers (but not display: none;, for accessibility) */
-    tr th { 
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
+    
+    .taglineTxt {
+    	color: #ffd2da;
+    	font-size: 2.6vw;
     }
-    td { 
-      /* Behave  like a "row" */
-      border: none;
-      position: relative;
+    
+    .mainIcon {
+    	width: 15%;
+    	max-width: 150px;
+    	min-width: 50px;
+    	margin-bottom: 15px;
     }
-    td:before { 
-      /* Now like a table header */
-      position: absolute;
-      white-space: nowrap;
+    
+    .mainIcon:hover {
+    -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 30px 0px white;
+      -moz-box-shadow: 0px 0px 30px 0px white;
+      box-shadow: 0px 0px 30px 0px white;
     }
-    /*
-    Label the data
-    */
-    td:after {
-      font-weight: 600;
+    
+    .icon {
+    	width: 12%;
+    	min-width: 50px;
+    	max-width: 100px;
+    	padding-left: 1.5em;
+    	padding-right: 1.5em;
     }
-    td:nth-of-type(1):after { content: " - Position"; }
-    td:nth-of-type(2):after { content: " - Project"; }
-    td:nth-of-type(3):after { content: " - Type"; }
-    td:nth-of-type(4):after { content: " - Producer"; }
-    td:nth-of-type(5):after { content: " - Director"; }
-}
+    
+    .potato {
+      width: 300%;
+      display: none;
+    }
+    
+    .aniPotato {
+      z-index: -1;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 40px;
+        height: 40px;
+    
+        -webkit-animation: moveX 6s linear 0s infinite alternate;
+        -moz-animation: moveX 6s linear 0s infinite alternate;
+        -o-animation: moveX 6s linear 0s infinite alternate;
+        animation: moveX 6s linear 0s infinite alternate,
+                   moveY 3.4s linear 0s infinite alternate;
+    }
+    @-webkit-keyframes moveX {
+      from { left: 0; } to { left: 102%; }
+    }
+    @-moz-keyframes moveX {
+      from { left: 0; } to { left: 102%; }
+    }
+    @-o-keyframes moveX {
+      from { left: 0; } to { left: 102%; }
+    }
+    @keyframes moveX {
+      from { left: 0; } to { left: 102%; }
+    }
+    @-webkit-keyframes moveY {
+      from { top: 0; } to { top: 100%; }
+    }
+    @-moz-keyframes moveY {
+      from { top: 0; } to { top: 100%; }
+    }
+    @-o-keyframes moveY {
+      from { top: 0; } to { top: 100%; }
+    }
+    @keyframes moveY {
+      from { top: 0; } to { top: 100%; }
+    }
 
 
 // _____________________________________________________ scrolling icon
@@ -280,19 +220,6 @@ body {
     	color: #ffbfc9;
     }
 
-@media handheld, screen and (min-width: 800px) {
-  .nav a {
-    font-size: 180%;
-    letter-spacing: .2rem;
-  }
-  .navSpacer {
-    padding-left: 2.3%;
-    padding-right: 2.3%;
-  }
-  #contactBtn {
-    padding-top: 1%;
-  }
-}
 
 // _____________________________________________________ about
 .aboutSection {
@@ -421,59 +348,6 @@ body {
       color: #1088ea;
     }
 
-@media all and (max-width: 900px) {
-    .aboutSectionTitle, .filmSectionTitle, .codeSectionTitle {
-      margin-top: 25%;
-    }
-}
-
-@media all and (max-width: 700px) {
-    .aboutBG, .filmBG, .codeBG {
-      opacity: 1;
-    }
-    .aboutBtn, .filmBtn, .codeBtn {
-      opacity: 0.5;
-    }
-    .aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
-      text-shadow: .7px 1px #d8d8d8;
-    }
-    .filmSectionTitle, .codeSectionTitle {
-      margin-left: -10%;
-      font-size: 30vw;
-    }
-    .aboutTitleDiv {
-      margin-left: -20%;
-      font-size: 30vw;
-    }
-}
-
-@media all and (max-width: 540px) {
-    .aboutTitleDiv {
-      margin-left: -33%;
-      font-size: 40vw;
-    }
-    .filmSectionTitle {
-      margin-left: -25%;
-      font-size: 40vw;
-    }
-    .codeSectionTitle {
-      margin-left: -35%;
-      font-size: 40vw;
-    }
-    .aboutBtn, .filmBtn, .codeBtn {
-      text-shadow: .7px 1px #d8d8d8;
-      opacity: 1;
-    }
-        .aboutBtn {
-          color: #5bb789;
-        }
-        .filmBtn {
-          color: #e04700;
-        }
-        .codeBtn {
-          color: #1088ea;
-        }
-}
 
 // _____________________________________________________ film
 .filmResume {
@@ -550,17 +424,6 @@ body {
         text-align: center;
     }
 
-@media handheld, screen and (max-width: 500px) {
-    /* For mobile phones: */
-    .edusub {
-      font-family: $font-stack2;
-      font-style: italic;
-    }
-    .experience {
-      width: 80%;
-    }
-}
-
 
 // _____________________________________________________ code
 .codeResume {
@@ -608,12 +471,90 @@ body {
   font-size: 350%;
 }
 
-@media all and (max-width: 700px) {
-    .codeProject {
-      font-size: 4vw;
-      margin-top: 18%;
+        // _______________________________________ individual project pages
+        .centered {
+          text-align: center;
+        }
+        .projectShow .projNav a {
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: $font-stack;
+            color: #7c7c7c;
+            letter-spacing: 1.1px;
+            padding-bottom: 1%;
+        }
+        .projectShow .projNav a:hover{
+            color: pink;
+        }
+        .projectShow p {
+            font-family: $font-stack2;
+            font-size: 1em;
+        }
+        .projectShow li {
+          font-family: $font-stack2;
+          font-size: 1em;
+            text-align: left;
+        }
+        .projImgs {
+            padding-top: 2%;
+        }
+        .projImgs img{
+            width: 75vw;
+        }
+        .vimeoVid {
+            padding-top: 1%;
+            width: 60vw;
+            height: 30vw;
+        }
+        
+        // _______________________________________ modals
+        .codeProjectModal {
+            display: none;
+            position: fixed; 
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%; 
+            overflow: auto;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+            color: black;
+            text-align: center;
+        }
+        .codeProjectModalContent {
+            background-color: #f9dbe0;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .projClose {
+            color: #aaa;
+            float: right;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .projClose:hover,
+        .projClose:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+// ____________________________________________________ media queries
+@media handheld, screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .edusub {
+      font-family: $font-stack2;
+      font-style: italic;
+    }
+    .experience {
+      width: 80%;
     }
 }
+
 
 @media all and (max-width: 540px) {
     .codeProjectDiv { 
@@ -623,78 +564,117 @@ body {
     .codeProject {
       font-size: 6vw;
     }
+    .aboutTitleDiv {
+      margin-left: -33%;
+      font-size: 40vw;
+    }
+    .filmSectionTitle {
+      margin-left: -25%;
+      font-size: 40vw;
+    }
+    .codeSectionTitle {
+      margin-left: -35%;
+      font-size: 40vw;
+    }
+    .aboutBtn, .filmBtn, .codeBtn {
+      text-shadow: .7px 1px #d8d8d8;
+      opacity: 1;
+    }
+        .aboutBtn {
+          color: #5bb789;
+        }
+        .filmBtn {
+          color: #e04700;
+        }
+        .codeBtn {
+          color: #1088ea;
+        }
 }
 
-    // _______________________________________ individual project pages
-    .centered {
-      text-align: center;
-    }
-    .projectShow .projNav a {
-        text-decoration: none;
-        font-size: 1.2em;
-        font-family: $font-stack;
-        color: #7c7c7c;
-        letter-spacing: 1.1px;
-        padding-bottom: 1%;
-    }
-    .projectShow .projNav a:hover{
-        color: pink;
-    }
-    .projectShow p {
-        font-family: $font-stack2;
-        font-size: 1em;
-    }
-    .projectShow li {
+
+@media handheld, screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .nameTitle, .abouttxt3 {
       font-family: $font-stack2;
-      font-size: 1em;
-        text-align: left;
+      font-style: italic;
     }
-    .projImgs {
-        padding-top: 2%;
+
+    .aboutTxtWrapper {
+      max-width: 80%;
+      margin: auto;
     }
-    .projImgs img{
-        width: 75vw;
+
+    .filmWrapper {
+      overflow: hidden;
     }
-    .vimeoVid {
-        padding-top: 1%;
-        width: 60vw;
-        height: 30vw;
+
+    /* Force table to not be like tables anymore */
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      border: none;
     }
-    
-    // _______________________________________ modals
-    .codeProjectModal {
-        display: none;
-        position: fixed; 
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%; 
-        overflow: auto;
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-        color: black;
-        text-align: center;
+    /* Zebra striping */
+    tr:nth-of-type(odd) { 
+      background: #ea7f4d; 
     }
-    .codeProjectModalContent {
-        background-color: #f9dbe0;
-        margin: 15% auto; 
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
+    table, thead, tbody, th, td, tr { 
+      display: block; 
     }
-    .projClose {
-        color: #aaa;
-        float: right;
-        font-size: 25px;
-        font-weight: bold;
+    /* Hide table headers (but not display: none;, for accessibility) */
+    tr th { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
     }
-    .projClose:hover,
-    .projClose:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
     }
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      white-space: nowrap;
+    }
+    /*
+    Label the data
+    */
+    td:after {
+      font-weight: 600;
+    }
+    td:nth-of-type(1):after { content: " - Position"; }
+    td:nth-of-type(2):after { content: " - Project"; }
+    td:nth-of-type(3):after { content: " - Type"; }
+    td:nth-of-type(4):after { content: " - Producer"; }
+    td:nth-of-type(5):after { content: " - Director"; }
+}
+
+
+@media all and (max-width: 700px) {
+    .codeProject {
+      font-size: 4vw;
+      margin-top: 18%;
+    }
+    .aboutBG, .filmBG, .codeBG {
+      opacity: 1;
+    }
+    .aboutBtn, .filmBtn, .codeBtn {
+      opacity: 0.5;
+    }
+    .aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
+      text-shadow: .7px 1px #d8d8d8;
+    }
+    .filmSectionTitle, .codeSectionTitle {
+      margin-left: -10%;
+      font-size: 30vw;
+    }
+    .aboutTitleDiv {
+      margin-left: -20%;
+      font-size: 30vw;
+    }
+}
+
 
 @media only screen and (max-device-width: 801px) {
     /* For mobile phones: */
@@ -702,4 +682,27 @@ body {
       font-family: $font-stack2;
       font-style: italic;
     }
+}
+
+
+@media all and (max-width: 900px) {
+    .aboutSectionTitle, .filmSectionTitle, .codeSectionTitle {
+      margin-top: 25%;
+    }
+}
+
+
+@media handheld, screen and (min-width: 800px) { 
+// large size screens
+  .nav a {
+    font-size: 180%;
+    letter-spacing: .2rem;
+  }
+  .navSpacer {
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+  }
+  #contactBtn {
+    padding-top: 1%;
+  }
 }
