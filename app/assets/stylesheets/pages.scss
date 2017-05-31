@@ -437,7 +437,17 @@ body {
     }
     .aboutBtn:hover, .filmBtn:hover, .codeBtn:hover {
       text-shadow: .7px 1px #d8d8d8;
+       opacity: 1;
     }
+        .aboutBtn:hover {
+          color: #5bb789;
+        }
+        .filmBtn:hover {
+          color: #e04700;
+        }
+        .codeBtn:hover {
+          color: #1088ea;
+        }
     .filmSectionTitle, .codeSectionTitle {
       margin-left: -10%;
       font-size: 30vw;
