@@ -75,7 +75,17 @@ $(document).on('turbolinks:load', function(){
     });
 
 
+    //code project cards 
+    $('.card').mouseleave(function() {
+      $('.card').scrollTop(0);
+    });
+
 });
+
+
+
+
+
 
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(document).ready(function($) {

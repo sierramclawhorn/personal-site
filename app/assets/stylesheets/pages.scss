@@ -272,6 +272,12 @@ body {
       letter-spacing: .06rem;
       font-size: 1.2rem;
     }
+    .emphasisetxt5 {
+      font-variant: small-caps;
+    }
+    .emphasisetxt6 {
+      letter-spacing: .06rem;
+    }
 
 
 // _____________________________________________________ hello
@@ -511,6 +517,7 @@ body {
         }
         
         .card__front {
+          image-orientation: 0deg;
           background-size: cover;
           background-repeat:   no-repeat;
           background-position: center center;
@@ -574,13 +581,16 @@ body {
         }
 
         .projDesc {
-          font-size: 1.2rem;
+          // font-size: 2rem;
           text-align: justify;
           padding-left: 1.8%;
           padding-right: 1.8%;
-          letter-spacing: 0.02rem;
-          line-height: 1.5rem;
+          letter-spacing: 0.04rem;
+          line-height: 1.6rem;
         }
+            .larger {
+              font-size: 1.1rem;
+            }
 
         .projTechStack {
           color: #1054e8;
@@ -606,29 +616,29 @@ body {
           margin-top: 0.5%;
         }
         
-        .cardIframe {
-          width: 96%;
-          height: auto;
-        }
-
+        .cardIframe,
         .cardImg {
+          width: 98%;
           margin: auto;
-          text-align: center;
-          width: 90%;
+        }
+        .cardImgSmaller {
+          width: 85%;
         }
 
         .quote {
-          font-size: 3rem;
-          color: #497ff4;
-          text-transform: uppercase;
+          font-size: 2.3rem;
+          color: #6592f2;
+          font-variant: small-caps;
           text-align: justify;
-          width: 70%;
+          width: 66%;
+          font-weight: 600;
+          letter-spacing: -0.08rem;
+          line-height: 1.09rem;
         }
 
         .lighter {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           font-weight: 100;
-          color: #497ff4;
         }
 
         // _______________________________________ individual project pages (modals)
