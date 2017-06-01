@@ -526,12 +526,12 @@ body {
               font-family: $font-stack2;
               font-size: 3vw; 
             }
-            .klinkCard { background-image: url('/images/klinkcard.gif'); }
+            .klinkCard { background-image: url('/images/klinkcard.jpg'); }
             .clinicfinderCard { background-image: url('/images/clinicfindercard.jpg'); }
             .adoptCard { background-image: url('/images/adoptcard.jpg'); }
             .potatobodyCard { background-image: url('/images/potatobodycard.jpg'); }
             .portfoliosCard { background-image: url('/images/portfolioscard.jpg'); }
-            .kathyandsierraCard { background-image: url('/images/kathyandsierracard.jpg'); }
+            .kathyandsierraCard { background-image: url('/images/kathyandsierracard.gif'); }
             // .kwantreeCard { background-image: url('/images/') }
             // .vimeoCard { background-image: url('/images/'); }
             // .comingsoonCard { background-image: url('/images/'); }
@@ -635,10 +635,16 @@ body {
           letter-spacing: -0.08rem;
           line-height: 1.09rem;
         }
-
         .lighter {
           font-size: 1.1rem;
           font-weight: 100;
+        }
+        .comingsoon {
+          font-style: italic;
+          color: #6592f2;
+          font-weight: 600;
+          font-size: 400%;
+          font-variant: small-caps;
         }
 
         // _______________________________________ individual project pages (modals)
