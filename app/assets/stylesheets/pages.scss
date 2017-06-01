@@ -485,9 +485,12 @@ body {
         .card {
           position: relative;
           float: left;
+          padding-bottom: 33.3333%;
           width: 33.3333%;
-          height: 40vw;
+          height: 15vw;
           text-align: center;
+          background-color: #7ebdea;
+          overflow: auto;
         }
         
         .card__front,
@@ -508,11 +511,9 @@ body {
         }
         
         .card__front {
-          background-color: #7ebdea;
           background-size: cover;
           background-repeat:   no-repeat;
           background-position: center center;
-          // #ff5078;
         }
             .card__text {
               font-family: $font-stack2;
@@ -529,14 +530,108 @@ body {
             // .comingsoonCard { background-image: url('/images/'); }
         
         .card__back {
-          background-color: #1e1e1e;
           -webkit-transform: rotateY(-180deg);
                   transform: rotateY(-180deg);
         }
 
+        .card.effect__hover:hover .card__front {
+          -webkit-transform: rotateY(-180deg);
+                  transform: rotateY(-180deg);
+        }
+        
+        .card.effect__hover:hover .card__back {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+        }
 
 
-        // _______________________________________ individual project pages
+        // _______________________________________ individual project pages (cards)
+        .projectShowCard {
+          padding-bottom: 6%;
+        }
+
+        .projectShow .projLinks a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-family: $font-stack;
+            color: #1088ea;
+            letter-spacing: 1.1px;
+        }
+        .projectShow .projLinks a:hover{
+            color: #ff5078;
+        }
+
+        .projectShow .projLinksPress a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-family: $font-stack;
+            color: #1088ea;
+            letter-spacing: 0.3rem;
+            padding-top: 0.2%;
+        }
+        .projectShow .projLinksPress a:hover{
+            color: orange;
+        }
+
+        .projDesc {
+          font-size: 1.2rem;
+          text-align: justify;
+          padding-left: 1.8%;
+          padding-right: 1.8%;
+          letter-spacing: 0.02rem;
+          line-height: 1.5rem;
+        }
+
+        .projTechStack {
+          color: #1054e8;
+          font-size: 1.3rem;
+          font-weight: 500;
+          letter-spacing: .2rem;
+        }
+
+        .projTechStackContent {
+          font-size: 1rem;
+          font-weight: 200;
+          font-family: 'avenir next';
+          word-spacing: 0.1rem;
+        }
+
+        .projRole {
+          color: #497ff4;
+          font-size: 1.1rem;
+          letter-spacing: .2rem;          
+        }
+
+        .projRoleList {
+          margin-top: 0.5%;
+        }
+        
+        .cardIframe {
+          width: 96%;
+          height: auto;
+        }
+
+        .cardImg {
+          margin: auto;
+          text-align: center;
+          width: 90%;
+        }
+
+        .quote {
+          font-size: 3rem;
+          color: #497ff4;
+          text-transform: uppercase;
+          text-align: justify;
+          width: 70%;
+        }
+
+        .lighter {
+          font-size: 1.2rem;
+          font-weight: 100;
+          color: #497ff4;
+        }
+
+        // _______________________________________ individual project pages (modals)
         .centered {
           text-align: center;
         }
