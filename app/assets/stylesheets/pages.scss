@@ -491,11 +491,13 @@ body {
         .card {
           position: relative;
           float: left;
-          padding-bottom: 33.3333%;
-          width: 33.3333%;
-          height: 15vw;
+          background-color: #02056d;
+          border-left: 0.2px solid #191919;
+          border-bottom: 0.2px solid #191919;
+          padding-bottom: 33.1%;
+          width: 33.1%;
+          height: 3vw;
           text-align: center;
-          background-color: #7ebdea;
           overflow: auto;
         }
         
@@ -517,6 +519,7 @@ body {
         }
         
         .card__front {
+          background-color: #7ebdea;
           image-orientation: 0deg;
           background-size: cover;
           background-repeat:   no-repeat;
@@ -524,19 +527,20 @@ body {
         }
             .card__text {
               font-family: $font-stack2;
-              font-size: 3vw; 
+              font-size: 2.8vw; 
             }
-            .klinkCard { background-image: url('/images/klinkcard.jpg'); }
-            .clinicfinderCard { background-image: url('/images/clinicfindercard.JPG'); }
-            .adoptCard { background-image: url('/images/adoptcard.JPG'); }
-            .potatobodyCard { background-image: url('/images/potatobodycard.JPG'); }
-            .portfoliosCard { background-image: url('/images/portfolioscard.JPG'); }
+            .klinkCard { background-image: url('/images/klinkcard.png'); }
+            .clinicfinderCard { background-image: url('/images/clinicfindercard.png'); }
+            .adoptCard { background-image: url('/images/adoptcard.png'); }
+            .potatobodyCard { background-image: url('/images/potatobodycard.png'); }
+            .portfoliosCard { background-image: url('/images/portfolioscard.png'); }
             .kathyandsierraCard { background-image: url('/images/kathyandsierracard.gif'); }
             // .kwantreeCard { background-image: url('/images/') }
             // .vimeoCard { background-image: url('/images/'); }
             // .comingsoonCard { background-image: url('/images/'); }
         
         .card__back {
+          background-color: #02056d;
           -webkit-transform: rotateY(-180deg);
                   transform: rotateY(-180deg);
         }
