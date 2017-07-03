@@ -2,5 +2,5 @@ Rails.application.routes.draw do
 	resources :pages
 		get '/hello' => 'pages#hello'
 
-	root 'pages#index'
+	root 'pages#hello'
 end
