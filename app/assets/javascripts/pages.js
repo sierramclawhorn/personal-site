@@ -82,14 +82,23 @@ $(document).ready(function($) {
       //potato
       var tater = document.getElementsByClassName('potato')[0];
   
-      $('.tagline').on('mouseover', function() {
+      $('.potatobodyContent').on('mouseover', function() {
         tater.style.display = "initial";
-        console.log("hovered");
       });
-      $('.tagline').on('mouseout', function() {
+      $('.potatobodyContent').on('mouseout', function() {
         tater.style.display = "none";
-        console.log("hovered");
       });
+
+      // // // PAGES#INDEX (note: change z-index to -1 in CSS)
+      // $('.tagline').on('mouseover', function() {
+      //   tater.style.display = "initial";
+      //   console.log("hovered");
+      // });
+      // $('.tagline').on('mouseout', function() {
+      //   tater.style.display = "none";
+      //   console.log("hovered");
+      // });
+
     }
 });
 
