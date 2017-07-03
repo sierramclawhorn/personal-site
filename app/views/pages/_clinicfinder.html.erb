@@ -1,34 +1,37 @@
-<div class='projectShow'>
+<div class='projectShow projectShowCard'>
 
 	<span class='centered'>
-	<div class='projNav'>
-		<%= link_to 'gem', 'https://rubygems.org/gems/clinic_finder', 	target: '_blank', rel: 'nofollow' %>
-		<span class='navSpacer'> • </span>
+	<div class='projLinks'>
 		<%= link_to 'github', 'https://github.com/colinxfleming/clinic_finder', target: '_blank', rel: 'nofollow' %>
 		<span class='navSpacer'> • </span>
-		<%= link_to 'CNN press', 'http://money.cnn.com/2017/03/06/technology/abortion-access-hackathon-san-francisco/index.html', target: '_blank', rel: 'nofollow' %>
-		<span class='navSpacer'> • </span>
-		<%= link_to 'Rewire press', 'https://rewire.news/article/2017/03/07/abortion-access-hackathon-seek-solve-problems-experiencing/', target: '_blank', rel: 'nofollow' %>
-		<span class='navSpacer'> • </span>
-		<%= link_to 'New Yorker press', 'http://www.newyorker.com/tech/elements/coding-for-abortion-access?intcid=mod-latest', target: '_blank', rel: 'nofollow' %>
+		<%= link_to 'gem', 'https://rubygems.org/gems/clinic_finder', 	target: '_blank', rel: 'nofollow' %><Br>
+	</div>
+
+	<div class='projLinksPress'>
+		{ <span class='pressLink'><%= link_to 'CNN', 'http://money.cnn.com/2017/03/06/technology/abortion-access-hackathon-san-francisco/index.html', target: '_blank', rel: 'nofollow' %></span> }
+		<span class='navSpacer'></span>
+		{ <span class='pressLink'><%= link_to 'Rewire', 'https://rewire.news/article/2017/03/07/abortion-access-hackathon-seek-solve-problems-experiencing/', target: '_blank', rel: 'nofollow' %></span> } 
+		<span class='navSpacer'></span>
+		{ <span class='pressLink'><%= link_to 'New Yorker', 'http://www.newyorker.com/tech/elements/coding-for-abortion-access?intcid=mod-latest', target: '_blank', rel: 'nofollow' %></span> }
 	</div>
 	</span>
 
 	<h2>#AbortionAccessHackathon</h2>
 
-	<div class='projImgs'>
-		<img src="https://c1.staticflickr.com/4/3797/33270998116_2c5280ceed.jpg" alt="photo by Fox Nakai">
+	<div class='cardImg'>
+		<img src="https://c1.staticflickr.com/4/3797/33270998116_2c5280ceed.jpg" alt="photo by Fox Nakai" class='cardImg'>
 	</div>
 
-	<h1>Clinic Finder</h1>
-		<p>A ruby gem built with DC Abortion Fund for San Francisco's Abortion Access Hackathon 2017. The gem is intended to help case management teams limit their patients' logistical challenges to securing an abortion, such as figuring out the closest clinic to them, the cheapest clinic in their state, or a clinic that will still see them at their current gestational age.<br>
-		The MVP version is currently live and in use as of hackathon demo date. It is continually being improved as an open source project, with direct feedback from case managers as needs evolve.</p>
+	<p class='projDesc'>
+		<span class='larger'>A ruby gem built with DC Abortion Fund for San Francisco's Abortion Access Hackathon 2017. The gem is intended to help case management teams limit their patients' logistical challenges to securing an abortion, such as figuring out the closest clinic to them, the cheapest clinic in their state, or a clinic that will still see them at their current gestational age.<br>
+		The MVP version is currently live and in use as of hackathon demo date. It is continually being improved as an open source project, with direct feedback from case managers as needs evolve.</span>
+	</p>
 	
-	<h2>Tech Stack</h2>
-		<p>Ruby, GeoKit, MiniTest</p>
+	<span class='projTechStack'>TECH STACK</span><br>
+		<span class='projTechStackContent'>Ruby, GeoKit, MiniTest</span><br><br>
 
-	<h2>Responsibilities</h2>
-		<ul>
+	<span class='projRole'>RESPONSIBILITIES</span>
+		<ul class='projRoleList'>
 			<li>implementation of closest clinics locator methods</li>
 			<li>MiniTest</li>
 			<li>gem publishing</li>

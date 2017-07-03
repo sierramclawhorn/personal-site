@@ -30,29 +30,6 @@ $(document).on('turbolinks:load', function(){
         }
     };
 
-    // code project modals
-    var modalBtns = document.querySelectorAll('.codeProjBtn');
-    modalBtns.forEach(function(btn){
-      btn.onclick = function() {
-        var projModal = btn.getAttribute('data-modal');
-        document.getElementById(projModal).style.display =  "block";
-      }
-    });
-    
-    var closeBtns = document.querySelectorAll(".projClose");
-    closeBtns.forEach(function(btn){
-      btn.onclick = function() {
-        var projModal = btn.closest('.codeProjectModal');
-        projModal.style.display = "none";
-      }
-    });
-    
-    window.onclick = function(event) {
-      if (event.target.className === 'codeProjectModal') {
-        event.target.style.display = "none";
-      }
-    };
-
 
     //tooltips
     $('.masterTooltip').hover(function(){
@@ -75,9 +52,22 @@ $(document).on('turbolinks:load', function(){
     });
 
 
-    //code project cards 
-    $('.card').mouseleave(function() {
-      $('.card').scrollTop(0);
+    //codeprojects
+    $('.klinkProj').on('click', function() {
+      $('.projectContent').css('display', 'none');
+      $('.klinkContent').toggle();
+    });
+    $('.clinicfinderProj').on('click', function() {
+      $('.projectContent').css('display', 'none');
+      $('.clinicfinderContent').toggle();
+    });
+    $('.petfinderProj').on('click', function() {
+      $('.projectContent').css('display', 'none');
+      $('.petfinderContent').toggle();
+    });
+    $('.potatobodyProj').on('click', function() {
+      $('.projectContent').css('display', 'none');
+      $('.potatobodyContent').toggle();
     });
 
 });

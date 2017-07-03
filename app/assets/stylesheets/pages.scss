@@ -435,11 +435,9 @@ body {
 .codeResume {
   margin: auto;
   padding-top: 1%;
+  padding-bottom: 1%;
   width: 100%;
-}
-
-.codeResumeFlipper {
-  display: none;
+  background-color: #7ebdea;
 }
 
 #codePortfolio {
@@ -447,118 +445,95 @@ body {
 }
 
 .codeProjectDiv {
-  width: 45vw;
+  vertical-align: top;
+  width: 23vw;
   height: 20vw;
   margin: .1%;
   margin-bottom: .3%;
   display: inline-block;
-  background-color: #7ebdea;
+  background-color: #b6d6ed;
   border: 2px white solid;
+}
+
+.codeProjectDiv:hover {
+  cursor: pointer;
 }
 
 .codeProject {
   position: relative;
-  margin-top: 20%;
+  margin-top: 30%;
   font-family: $font-stack2;
   font-size: 2.5vw;
   color: white;
 }
 
-.codeProject a, .codeProject .codeProjBtn{
+.codeProject a {
   color: white;
   text-decoration: none;
 }
 
-.codeProject a:hover, .codeProject .codeProjBtn:hover {
-  color: black;
+.codeProject a:hover {
+  font-family: $font-stack;
   text-shadow: .7px 1px #d8d8d8;
   cursor: pointer;
   font-style: italic;
 }
 
-.codeTitle {
-  font-family: $font-stack;
-  font-size: 350%;
+.codeProjImg {
+  width: 80%;
+  margin: auto;
+  margin-top: -48%;
 }
 
-        // _______________________________________ project flip cards
-        .codeResumeFlipper {
-          margin: auto;
+.projectContent {
+  display: none;
+  margin: auto;
+  margin-top: 1%;
+  width: 90vw;
+  position: relative;
+  background: #02056d;
+  border: 4px solid #b6d6ed;
+  border-radius: 25px;
+}
+
+.projectContent:after, .projectContent:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+  .klinkContent:after, .klinkContent:before {
+      left: 10%;
+  }
+  .clinicfinderContent:after, .clinicfinderContent:before {
+      left: 35%;
+  }
+  .petfinderContent:after, .petfinderContent:before {
+      left: 65%;
+  }
+  .potatobodyContent:after, .potatobodyContent:before {
+      left: 90%;
+  }
+
+.projectContent:after {
+  border-bottom-color: #02056d;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.projectContent:before {
+  border-bottom-color: #b6d6ed;
+  border-width: 14px;
+  margin-left: -14px;
+}
+
+        .projectShow {
           padding-top: 1%;
-          width: 100%;
-        }
-
-        .card {
-          position: relative;
-          float: left;
-          background-color: #02056d;
-          border-left: 0.2px solid #191919;
-          border-bottom: 0.2px solid #191919;
-          padding-bottom: 33.1%;
-          width: 33.1%;
-          height: 3vw;
-          text-align: center;
-          overflow: auto;
-        }
-        
-        .card__front,
-        .card__back {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-        
-        .card__front,
-        .card__back {
-          -webkit-backface-visibility: hidden;
-                  backface-visibility: hidden;
-          -webkit-transition: -webkit-transform 0.3s;
-                  transition: transform 0.3s;
-        }
-        
-        .card__front {
-          background-color: #7ebdea;
-          image-orientation: 0deg;
-          background-size: cover;
-          background-repeat:   no-repeat;
-          background-position: center center;
-        }
-            .card__text {
-              font-family: $font-stack2;
-              font-size: 2.8vw; 
-            }
-            .klinkCard { background-image: url('/images/klinkcard.png'); }
-            .clinicfinderCard { background-image: url('/images/clinicfindercard.png'); }
-            .adoptCard { background-image: url('/images/adoptcard.png'); }
-            .potatobodyCard { background-image: url('/images/potatobodycard.png'); }
-            .portfoliosCard { background-image: url('/images/portfolioscard.png'); }
-            .kathyandsierraCard { background-image: url('/images/kathyandsierracard.png'); }
-            // .kwantreeCard { background-image: url('/images/') }
-            // .vimeoCard { background-image: url('/images/'); }
-            // .comingsoonCard { background-image: url('/images/'); }
-        
-        .card__back {
-          background-color: #02056d;
-          -webkit-transform: rotateY(-180deg);
-                  transform: rotateY(-180deg);
-        }
-
-        .card.effect__hover:hover .card__front {
-          -webkit-transform: rotateY(-180deg);
-                  transform: rotateY(-180deg);
-        }
-        
-        .card.effect__hover:hover .card__back {
-          -webkit-transform: rotateY(0);
-                  transform: rotateY(0);
-        }
-
-
-        // _______________________________________ individual project pages (cards)
-        .projectShowCard {
-          padding-bottom: 6%;
+          padding-bottom: 1%;
+          margin: 6%;
         }
 
         .projectShow .projLinks a {
@@ -585,7 +560,7 @@ body {
         }
 
         .projDesc {
-          // font-size: 2rem;
+          font-family: $font-stack2;
           text-align: justify;
           padding-left: 1.8%;
           padding-right: 1.8%;
@@ -618,6 +593,9 @@ body {
 
         .projRoleList {
           margin-top: 0.5%;
+          letter-spacing: .1rem;
+          font-family: $font-stack;
+          font-weight: 200;
         }
         
         .cardIframe,
@@ -651,76 +629,6 @@ body {
           font-variant: small-caps;
         }
 
-        // _______________________________________ individual project pages (modals)
-        .centered {
-          text-align: center;
-        }
-        .projectShow .projNav a {
-            text-decoration: none;
-            font-size: 1.2em;
-            font-family: $font-stack;
-            color: #7c7c7c;
-            letter-spacing: 1.1px;
-            padding-bottom: 1%;
-        }
-        .projectShow .projNav a:hover{
-            color: pink;
-        }
-        .projectShow p {
-            font-family: $font-stack2;
-            font-size: 1em;
-        }
-        .projectShow li {
-          font-family: $font-stack2;
-          font-size: 1em;
-            text-align: left;
-        }
-        .projImgs {
-            padding-top: 2%;
-        }
-        .projImgs img{
-            width: 75vw;
-        }
-        .vimeoVid {
-            padding-top: 1%;
-            width: 60vw;
-            height: 30vw;
-        }
-        
-        // _______________________________________ modals
-        .codeProjectModal {
-            display: none;
-            position: fixed; 
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%; 
-            overflow: auto;
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-            color: black;
-            text-align: center;
-        }
-        .codeProjectModalContent {
-            background-color: #f9dbe0;
-            margin: 15% auto; 
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-        .projClose {
-            color: #aaa;
-            float: right;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        .projClose:hover,
-        .projClose:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
 
 
 // ____________________________________________________ media queries
@@ -740,6 +648,10 @@ body {
     .codeProjectDiv { 
       width: 80vw;
       height: 36vw;
+    }
+    .codeProjImg {
+      width: 40%;
+      margin-top: -28%;
     }
     .codeProject {
       font-size: 6vw;
@@ -824,7 +736,7 @@ body {
       font-weight: 600;
     }
     td:nth-of-type(1):after { content: " - Position"; }
-    td:nth-of-type(2):after { content: " - Project"; }
+    td:nth-of-type(2):after { content: " - Project / Company"; }
     td:nth-of-type(3):after { content: " - Type"; }
     td:nth-of-type(4):after { content: " - Producer"; }
     td:nth-of-type(5):after { content: " - Director"; }
@@ -884,15 +796,5 @@ body {
   }
   #contactBtn {
     padding-top: 1%;
-  }
-}
-
-@media handheld, screen and (min-width: 1000px) { 
-// larger browser windows/screens ________________________ code flip cards
-  .codeResume {
-    display: none;
-  }
-  .codeResumeFlipper {
-    display: initial;
   }
 }
