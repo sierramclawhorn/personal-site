@@ -770,7 +770,7 @@ body {
 
 @media only screen and (max-device-width: 801px) {
     /* For mobile phones: */
-    .codeTitle, .projectShow .projNav a, .abouttxt3 {
+    .codeTitle, .projectShow .projNav a, .abouttxt3, .projLinks, .pressLink {
       font-family: $font-stack2;
       font-style: italic;
     }
